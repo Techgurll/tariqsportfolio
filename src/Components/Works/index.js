@@ -9,7 +9,7 @@ import "./index.scss";
 
 function Works() {
   return (
-    <div className="works">
+    <div className="works" id="works">
       <h1 className="ml-5 pl-5 mt-5 pt-3">Works</h1>
 
       <div className="row mt-5 mb-5 ml-5 mr-5 work1">
@@ -40,16 +40,16 @@ function Works() {
       </div>
 
       <div className="row mt-5 mb-5 ml-5 mr-5 work3">
-        <div className="col-md-6 left">
+        <div className="col-md-6 pl-5 left">
           <h2>Haleness</h2>
           <p>An health app that speaks volume</p>
         </div>
-        <div className="col-md-6 text-right">
+        <div className="col-md-6 text-right right">
           <img src={work3} alt="work3" />
         </div>
       </div>
       <div className="row mt-5 mb-5 ml-5 mr-5 work4">
-        <div className="col-md-6 left">
+        <div className="col-md-6 pl-5 left">
           <h2>Haqibah</h2>
           <p>
             Fashion accessories such as bags are mainly always
@@ -57,21 +57,21 @@ function Works() {
             an accessory that cannot be overlooked.
           </p>
         </div>
-        <div className="col-md-6 text-right">
+        <div className="col-md-6 text-right right">
           <img src={work4} alt="work4" />
         </div>
       </div>
       <div className="row mt-5 mb-5 ml-5 mr-5 work5">
-        <div className="col-md-6 left">
+        <div className="col-md-6 pl-5 left">
           <h2>Illustrations</h2>
           <p>Different illustrations with different meanings.</p>
         </div>
-        <div className="col-md-6 text-right">
+        <div className="col-md-6 text-right right">
           <img src={work5} alt="work5" />
         </div>
       </div>
       <div className="row mt-5 mb-5 ml-5 mr-5 work6">
-        <div className="col-md-6 left">
+        <div className="col-md-6 pl-5 left">
           <h2>Landing Page</h2>
           <p>
             A landing page for a Fintech website that deals
@@ -79,7 +79,7 @@ function Works() {
             with money transfers.
           </p>
         </div>
-        <div className="col-md-6 text-right">
+        <div className="col-md-6 text-right right">
           <img src={work6} alt="work6" />
         </div>
       </div>

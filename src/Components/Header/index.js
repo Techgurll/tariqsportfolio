@@ -18,7 +18,7 @@ function Header() {
         </p>
         <h5 className="header-button">Find Out</h5>
       </div>
-      <div className="col-md-6 text-right">
+      <div className="col-md-6 text-right right">
         <img className="header-img" src={header} alt="header" />
       </div>
     </div>

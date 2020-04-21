@@ -4,7 +4,7 @@ import "./index.scss";
 
 function AboutMe() {
   return (
-    <div className="row mt-5 mb-5 ml-5 mr-5 aboutme">
+    <div className="row mt-5 mb-5 ml-5 mr-5 aboutme" id="aboutme">
       <div className="col-md-6 pl-5 left">
         <h1>About Me</h1>
         <p>
@@ -18,7 +18,7 @@ function AboutMe() {
           serving a meaningful purpose behing every <span>pixel.</span>
         </p>
       </div>
-      <div className="col-md-6 text-right">
+      <div className="col-md-6 text-right right">
         <img src={aboutme} alt="aboutme" />
       </div>
     </div>
