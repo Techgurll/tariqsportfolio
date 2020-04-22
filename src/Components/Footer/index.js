@@ -1,5 +1,8 @@
 import React from "react";
-import Twitter from "../../img/twitter.png";
+import twitter from "../../img/twitter.svg";
+import envelope from '../../img/envelope.svg';
+import instagram from '../../img/instagram.svg';
+import dribble from '../../img/dribble.svg';
 import './index.scss';
 
 function Footer() {
@@ -12,10 +15,10 @@ function Footer() {
         </p>
       </div>
       <div className="col-md-6 px-5 text-right right">
-        <img src={Twitter} alt="twitter" />
-        <img src={Twitter} alt="twitter" />
-        <img src={Twitter} alt="twitter" />
-        <img src={Twitter} alt="twitter" />
+        <img src={twitter} alt="twitter" className="mr-4"/>
+        <img src={dribble} alt="dribble" className="mr-4"/>
+        <img src={instagram} alt="instagram" className="mr-4"/>
+        <img src={envelope} alt="envelope"/>
       </div>
     </div>
   );
