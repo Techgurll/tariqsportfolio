@@ -1,47 +1,57 @@
-import React, { useState, useEffect } from 'react';
-import SideBar  from '../../Components/SideBar';
-import scrollToTop from '../../Helpers/scrollToTop';
-import logo from '../../img/logo.png';
+import React, { useState, useEffect } from "react";
+import "./index.scss";
+import logo from "../../img/logo.png";
+import SideBar from "../../Components/SideBar";
+import scrollToTop from "../../Helpers/scrollToTop";
 
-
-
-export function NavBar() {
+function NavBar() {
   const [sidebarVisible, setSidebarVisible] = useState(false);
   const toggleSidebar = () => {
     setSidebarVisible(!sidebarVisible);
   };
-
-  useEffect(()=>{
+  useEffect(() => {
     //Automatically scroll back to the top of the page whenever the page reloads
     scrollToTop();
   });
-
   return (
-    <React.Fragment>
-      <div className="d-lg-none d-md-none pt-3 pb-2">
+    <div>
+      <div className="d-flex justify-content-between">
         <div>
-          <img  src={logo} alt="Logo" />
-        </div>
-
-        <div>
-          <button className="navbar-toggler button-bars pr-5" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onClick={() => toggleSidebar()} >
-            <span className={`fa ${sidebarVisible ? 'fa-times' : 'fa-bars'}`} id="navicon"></span>
+          <button
+            className="navbar-toggler button-bars pr-5"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            onClick={() => toggleSidebar()}
+          >
+            <span
+              className={`fa ${sidebarVisible ? "fa-times" : "fa-bars"}`}
+              id="navicon"
+            ></span>
           </button>
         </div>
-      </div>
-      <div className="background">
-
         <div>
-          <SideBar visible={sidebarVisible} />
-        </div>
-
-        <div className='main d-flex flex-column' onClick={()=> setSidebarVisible(false)}>
-         
-          
+          <img className="" src={logo} alt="Logo" />
         </div>
       </div>
-    </React.Fragment>
+      <div>
+        <SideBar visible={sidebarVisible} />
+      </div>
+
+      <div className="nav ml-5 mt-5 pl-3 nav-bar">
+        <img className="logo" src={logo} alt="logo" />
+        <h3 className="ml-5">
+          <a href="#works">Works</a>
+        </h3>
+        <h3 className="ml-5">
+          <a href="#aboutme">About Me</a>
+        </h3>
+        <h3 className="ml-5 nav-button">Get In Touch</h3>
+      </div>
+    </div>
   );
 }
 
