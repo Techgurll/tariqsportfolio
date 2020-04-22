@@ -1,0 +1,41 @@
+.header {
+  .left {
+    margin-top: 8rem;
+    h1 {
+      font-family: RalewayLight;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 42px;
+      span {
+        font-family: RalewayBold;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 42px;
+      }
+    }
+    p {
+      font-family: RalewayMedium;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 150%;
+    }
+    .header-button {
+      background-color: black;
+      color: white;
+      width: 114px;
+      height: 43px;
+      padding-top: 12px;
+      padding-left: 25px;
+      border-radius: 3px;
+    }
+  }
+  .right{
+    img{
+     height: 100%;
+   
+    }
+  }
+}

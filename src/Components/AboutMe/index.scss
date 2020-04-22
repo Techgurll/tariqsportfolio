@@ -1,0 +1,30 @@
+.aboutme {
+  background-color: #edf1f9;
+  .left {
+    margin-top: 15rem;
+
+    h1 {
+      font-family: RalewayBold;
+
+      font-size: 36px;
+      line-height: 42px;
+    }
+    p {
+      font-family: RalewayMedium;
+
+      font-size: 18px;
+      line-height: 152.6%;
+      span {
+        font-family: RalewayBold;
+
+        font-size: 18px;
+        line-height: 152.6%;
+      }
+    }
+  }
+  .right {
+    img {
+      width: 100%;
+    }
+  }
+}
