@@ -32,10 +32,20 @@
       border-radius: 3px;
     }
   }
-  .right{
-    img{
-     height: 100%;
-   
+  .right {
+    img {
+      height: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 874px) {
+  .header {
+    .right {
+      img {
+        width: 100%;
+        padding-top: 50px;
+      }
     }
   }
 }
