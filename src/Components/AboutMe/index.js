@@ -6,7 +6,7 @@ function AboutMe() {
   return (
     <div className="row mt-5 mb-5 ml-5 mr-5 aboutme" id="aboutme">
       <div className="col-md-6 pl-5 left">
-        <h1>About Me</h1>
+        <h1 className="pb-3">About Me</h1>
         <p>
           I am a <span>multi disciplinary designer</span> with focus on <span>user research,</span>
           <br />
